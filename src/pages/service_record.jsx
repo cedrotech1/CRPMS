@@ -1,7 +1,18 @@
-function ReportPage() {
+
+function ServiceRecord() {
     return (
         <div>
-            <h1 className="text-2xl bg-blue-300">Report Page</h1>
+            <h1 className="text-2xl font-bold mb-6 bg-blue-500 text-white p-2 rounded m-6">Service Record form</h1>
+            {/* car(PlateNumber, type, Model,ManufacturingYear, 
+DriverPhone,MechanicName)  */}
+<form action="" className="flex flex-col gap-6 p-6">
+    <input className="border border-gray-300 rounded p-2" type="text" placeholder="RecordNumber" />
+    <input className="border border-gray-300 rounded p-2" type="date" placeholder="SeviceDate" />
+    
+    <button className="bg-blue-500 text-white rounded p-2 hover:bg-blue-600" type="submit">Submit</button>
+</form>
+
+ <h1 className="text-2xl bg-blue-300">Report Page</h1>
             {/* designed table Generating daily reports indicating offered Service and the amount paid 
 for each car.
  */}
@@ -27,4 +38,4 @@ for each car.
     );
 }
 
-export default ReportPage;
+export default ServiceRecord;
